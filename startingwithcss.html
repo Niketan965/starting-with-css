@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on Css</title>
+    <link rel="shortcut icon" href="./images.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            text-align: center;
+            background-color: bisque;
+        }
+        .image img{
+            border-radius: 50%;
+        }
+        .text{
+            color: brown;
+        }
+        .internal{
+            text-decoration: wavy;
+            color: chocolate;
+        }
+
+        .paragraphs{
+            background-color: blanchedalmond;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .container-1{
+            background-color: rgb(215, 183, 246);
+            width: 500px;
+            height: 600px;
+        }
+        .heading{
+            text-shadow: 2px 2px black;
+            
+        }
+        .container-2{
+            background-color: rgb(139, 229, 235);
+            height: 250px;
+            margin-top: 300px;
+            padding: 50px;
+        }
+
+        .paragraph-1{
+            text-decoration: underline;
+            color: brown;
+            cursor: pointer;
+            }
+        .paragraph-2{
+            text-align: center;
+            text-decoration: solid;
+            border: 1px solid black;
+            color: rgb(42, 79, 165);
+        }
+        .paragraph-3{
+            text-shadow: 3px 3px rgb(82, 74, 74);
+            font-size: 30px;
+            
+        }
+        .paragraph-4{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .paragraph-5{
+            line-height: 10px;
+            letter-spacing: 4px;
+            color: cadetblue;
+
+        }
+        .form{
+           background-color: #f7cac9;
+           font-family: 'Times New Roman', Times, serif;
+           margin: 0px;
+           padding: 0px;
+        }
+        .preliminaries input{
+            margin: 10px;
+           background-color: #f7786b;
+        }
+        .gender input{
+            margin: 10px;
+
+        }
+        .button-submit{
+            background-color: #034f84;
+            color: white;
+            margin-top: 50px;
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            cursor: pointer;
+            box-shadow: 5px 5px  #034f84;
+            opacity: 0.6;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img style="border-radius: 10%;" src="./images.png" alt="image">
+        </div>
+        <div class="text">
+            <h2 style="color: blue;">Nike</h2>
+            <h2>@Nike</h2>
+            <h2>follow me on :</h2>
+
+        </div>
+        
+    </div>
+    <p class="external">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni repudiandae, consequuntur autem alias sint qui repellendus quas at est rerum?
+
+    </p>
+
+    <p class="internal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, recusandae?</p><hr>
+
+    <h1>Q2</h1> 
+    <!-- BEM naming Convention -->
+    <div class="paragraphs">
+        <div class="container-1">
+            <h1 class="heading">First</h1>
+                <p class="paragraph-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At magni dolores tempore magnam id saepe! Facere quam explicabo blanditiis dolores assumenda quidem corrupti sint. Laudantium adipisci quam sunt suscipit necessitatibus, at consequuntur ipsum eaque commodi iure sed reiciendis iste et minus quia enim in rem tempora, vitae quos nihil officiis.
+                </p>
+                <p class="paragraph-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, autem et! Deleniti animi numquam sint, nihil voluptate nemo corrupti a ea ducimus laboriosam ex accusantium eveniet illum quisquam autem delectus temporibus dolore ullam distinctio dicta. Tempora quae, voluptatibus totam ipsum illo amet eius, blanditiis impedit dignissimos magni nam accusantium rem.</p>
+                <p class="paragraph-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint sit, quisquam nisi rerum mollitia ipsum quibusdam at modi natus laudantium provident aut expedita dolorum, ipsam accusantium suscipit veritatis culpa. Officiis quia inventore maiores excepturi deserunt reiciendis perferendis, natus aliquid quam?</p>
+                
+        </div>
+
+        <div class="container-2">
+            <h1 class="heading">Second</h1>
+            <p class="paragraph-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam atque distinctio eveniet dicta consequuntur non at itaque similique voluptates. Blanditiis magni, unde qui aperiam quidem beatae autem at ducimus voluptatum, doloribus assumenda saepe. Cupiditate ex dicta expedita esse rem sit.</p>
+            <p class="paragraph-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi nostrum vel et consequuntur, provident voluptates aperiam incidunt maxime, beatae numquam error exercitationem doloribus consequatur. Quam incidunt sed ducimus illum, maiores debitis totam officiis, excepturi cumque rem, harum deleniti? Deserunt, beatae eum. A, cumque labore dolores, repellat porro perspiciatis nostrum vitae accusamus illum dolorum natus fugiat, aperiam mollitia ut beatae facilis!</p>
+        </div>
+
+    </div>
+
+    <h1>Q3
+    </h1>
+
+    <div class="form">
+    <h2>Sign Up</h2>
+
+    <fieldset>
+    <form id="signup-form"  method="post" onsubmit="return validateForm()">
+        <div class="preliminaries">
+        <label style="margin-right: 100px ;" for="Firstname">Firstname:</label>
+        <input type="text" id="Firstname" name="Firstname" required minlength="3">
+        <br>
+
+        <label style="margin-right: 102px ;" for="Lastname">Lastname:</label>
+        <input type="text" id="Lastname" name="Lastname" required minlength="3">
+        <br>
+
+        <label style="margin-right: 125px ;" for="email">Email:</label>
+        <input type="email" id="email" name="email" required minlength="3">
+        <br>
+
+        <label style="margin-right: 102px ;" for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+        <label style="margin-right: 44px ;" for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <br>
+
+        <label style="margin-right: 142px ;" for="age">Age</label>
+        <input type="number" name="age" id="age" required min="1" max="150"><br>
+    </div>
+    <div class="gender">
+        <span style="color: #92a8d1;">GENDER:</span>
+        <br>
+        <label for="male">Male:</label>
+        <input type="radio" name="gender" id="male">
+        <br>
+        <label for="female">Female:</label>
+        <input type="radio" name="gender" id="female">
+        <br>
+        <label for="others">Others:</label>
+        <input type="radio" name="gender" id="others">
+        <br>
+
+        <label style="color: #92a8d1;" for="termsandcondition">Agree to terms and condition </label>
+        <input type="checkbox" name="" id="termsandcondition">
+        <br>
+    </div>
+        <input class="button-submit" type="submit" value="Sign Up">
+    
+    </form>
+</fieldset>
+</div>
+
+
+</body>
+</html>

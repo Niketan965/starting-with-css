@@ -1,0 +1,17 @@
+.container{
+    background-color: blueviolet;
+    text-align: left;
+}
+
+.image img{
+    border-radius: 30%;
+
+}
+.text{
+    color: rgb(42, 165, 46);
+}
+
+.external{
+    text-decoration: underline;
+    color: red;
+}
